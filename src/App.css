@@ -1,38 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gilroy';
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head {
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+  padding: 0 30px;
+  padding-bottom: 5px;
+  box-shadow: 12px 4px 24px 0px rgba(0, 0, 0, 0.06);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head .logo {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.head .links {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.head .links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.head .lan-sel {
+  display: flex;
+  gap: 15px;
+  font-weight: lighter;
+  justify-content: center;
+  align-items: center;
+}
+
+.head .lan-sel h3 {
+  font-weight: lighter;
+}
+
+.head .login {
+  display: flex;
+  gap: 10px;
+  color: #4E72CA;
+}
+
+.head .login a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+
+.sl {
+  margin-top: 50px;
+}
+
+.leftArrow {
+  position: absolute;
+  left: 40px;
+  cursor: pointer;
+}
+
+.leftArrow img {
+  transform: scale(1.2);
+}
+
+.rightArrow {
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
+}
+
+.rightArrow img {
+  transform: scale(1.2);
+}
+
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.right {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* margin-bottom: 150px; */
 }
 
-.App-link {
-  color: #61dafb;
+.right .text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right .text h3 {
+  color: #304FFF;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 23px;
+}
+
+.right .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.inputs input {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(151, 151, 151, 0.48);
+  background: #FFF;
+}
+
+.inputs label {
+  color: #787993;
+  text-align: left;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.inputs button{
+  padding: 20px;
+  border-radius: 5px;
+  background: #41D481;
+  border: none;
+  margin-top: 20px;
+}
+
+.reset{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.reset h2 {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+  font-size: 15px;
+} 
+
+.reset h2 span { 
+   background:#fff; 
+   padding:0 10px; 
+}
+
+.reset a{
+  text-decoration: none;
+  font-weight: bold;
 }
